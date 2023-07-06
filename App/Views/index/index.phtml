@@ -1,0 +1,48 @@
+<div class="main">
+    
+    
+    <div class="container">
+		<center>
+			<div class="middle">
+				<div id="login">
+
+					<form action="/autenticar" method="post">
+
+						<fieldset class="clearfix">
+
+							<p ><span class="fa fa-user"></span><input type="text" name="email" Placeholder="E-mail" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+							<p><span class="fa fa-lock"></span><input type="password" name="senha" Placeholder="Senha" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+							
+							<?php if($this->view->login == 'erro') { ?>
+								<p>
+									<div class="row">
+										<div class="col">
+											<span class="text">*E-mail ou senha inválido(s)*</span>
+										</div>
+									</div>
+								</p>
+							<?php } ?>
+
+							<div>
+								<!-- <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Forgot
+								password?</a></span> -->
+								<span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" value="Entrar"></span>
+							</div>
+
+						</fieldset>
+						<div class="clearfix"></div>
+					</form>
+
+					<div class="clearfix"></div>
+
+				</div> <!-- end login -->
+				<div class="logo">ROB
+					
+					<div class="clearfix"></div>
+				</div>
+				
+			</div>
+		</center>
+    </div>
+
+</div>
